@@ -77,8 +77,8 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🖥️ Web Arayüzü & Product Kılavuzu
-- Deploy Link: [https://banking-rag-chatbot.streamlit.app/]
+## 🖥️ Web Arayüzü
+- Deploy Link: [https://banking-rag-chatbot.streamlit.app]
 ![Banking RAG Chatbot Demo](assets/demo.gif)
 
 ---
