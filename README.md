@@ -80,9 +80,6 @@ streamlit run streamlit_app.py
 ## 🖥️ Web Arayüzü & Product Kılavuzu
 - Deploy Link: [https://banking-rag-chatbot.streamlit.app/]
 
-![Banking RAG Chatbot Demo](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXF2azM3OGc2bHV4NXBqbmdmd2VzM3I4ZW04Nml0ZXB2NjVpanNpbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/noahPtw2K0pSYsBmdu/giphy.gif)
-
-
 
 ---
 
