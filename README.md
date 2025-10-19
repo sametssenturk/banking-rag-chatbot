@@ -78,11 +78,10 @@ streamlit run streamlit_app.py
 ---
 
 ## 🖥️ Web Arayüzü & Product Kılavuzu
-- Deploy Link: [BURAYA EKLENECEK]
+- Deploy Link: [https://banking-rag-chatbot.streamlit.app/]
 - Beklenen akış: [BURAYA EKLENECEK]
 - Ekran görüntüleri / video: [BURAYA EKLENECEK]
 
-> Not: Bu bölüm ürün dağıtımı sonrası sizin tarafınızdan doldurulacaktır.
 
 ---
 
