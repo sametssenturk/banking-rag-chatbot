@@ -7,10 +7,29 @@ Kısa açıklama: Banking77 veri seti üzerinde RAG (Retrieval-Augmented Generat
 - Kullanıcı sorularını semantik olarak arayıp ilgili bağlamı LLM’e (Gemini) vererek doğru ve anlaşılır yanıt üretmek.
 
 ## 📚 Veri Seti
-- Dataset: PolyAI/BANKING77 (13,083 bankacılık müşteri sorusu, 77 niyet)
+- Dataset: PolyAI/BANKING77 — çevrim içi bankacılık sorgularından oluşan ve her bir sorgunun niyeti (intent) ile etiketlendiği bir veri seti.
+- Kapsam: 13,083 müşteri hizmetleri sorgusu, 77 ince taneli (fine-grained) niyet; tek alan (bankacılık) üzerinde yoğunlaşır.
 - Dil: İngilizce
-- Görev: İnce taneli (fine-grained) tek alanlı intent tespiti ve bankacılık bilgi ihtiyaçlarını kapsama
+- Desteklenen görevler: Intent sınıflandırma/deteksiyon
+- Yapı:
+  - Alanlar: `text` (string), `label` (0–76 arası tamsayı; her biri benzersiz bir intent’i temsil eder)
+  - Örnek:
+    ```json
+    {
+      "label": 11,
+      "text": "I am still waiting on my card?" // 11 -> "card_arrival"
+    }
+    ```
+- Bölünmeler ve istatistikler:
+  - Train: 10,003 örnek
+  - Test: 3,080 örnek
+  - Tek domain (bankacılık); ort. karakter uzunluğu ~59 (train), ~54 (test)
+- Lisans ve atıf:
+  - Lisans: Creative Commons Attribution 4.0 (CC BY 4.0)
+  - Önerilen atıf: Casanueva et al., Efficient Intent Detection with Dual Sentence Encoders (ACL 2020), https://arxiv.org/abs/2003.04807
 - Kaynak: https://huggingface.co/datasets/PolyAI/banking77
+
+Not: Veri İngilizce olduğundan, chatbot’tan en iyi performans İngilizce sorularda alınır.
 
 
 ## 🧪 Kullanılan Yöntemler
@@ -97,5 +116,15 @@ streamlit run streamlit_app.py
 - Chroma yapılandırması: Yol `./chroma_db`, koleksiyon `banking77_collection`.
 - Embedding modeli: `sentence-transformers/all-mpnet-base-v2` (notebook ve Streamlit’te aynı).
 - LLM: `gemini-2.5-flash` (GOOGLE_API_KEY gerektirir).
+
+### Neden `chroma_db/` depoda?
+Bu proje küçük ölçekli bir demo olduğundan ve Streamlit Cloud üzerinde hızlı deploy hedeflendiğinden, hazır olarak oluşturulmuş kalıcı ChromaDB klasörü (`./chroma_db`) depoya dahil edilmiştir. Böylece ilk açılışta indeks oluşturma süresi ve ek kurulumlar minimuma iner.
+
+Alternatif (daha üretim-odaklı) seçenekler:
+- Build aşamasında indeksi yeniden oluşturmak (örn. bir setup script’i ile)
+- Uzak bir vektör veritabanı kullanmak (Pinecone, Qdrant, Weaviate vb.)
+- `chroma_db.zip` gibi bir artefact’ı release’e koyup, uygulama başında açmak
+
+Bu repoda amaç hızlı deneme/tekrar üretilebilirlik olduğundan `chroma_db/` versiyon kontrolüne dahil edilmiştir.
 
 
