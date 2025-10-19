@@ -54,6 +54,7 @@ Bu proje iki parçadan oluşur ve rolleri farklıdır:
   3. ChromaDB oluşturma ve doldurma hücrelerini çalıştır (yol: `./chroma_db`, koleksiyon: `banking77_collection`).
   4. En sondaki ZIP hücresini çalıştır; `chroma_db.zip` oluşur. Bu dosyayı indirip depoya ekleyebilirsin.
 - Not: LLM testleri için API anahtarı gerekir; sadece veritabanı üretmek için gerekmez.
+- Notebook dosyasının kaggle üzerinde çalıştırılmış hali (çıktılarıyla birlikte): https://www.kaggle.com/code/sametsenturk/banking-rag-chatbot
 
 ### 2) Web Uygulaması — `streamlit_app.py`
 - Gereklilik:
