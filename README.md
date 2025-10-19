@@ -62,7 +62,7 @@ Kalıcı vektör veritabanı: `./chroma_db` (koleksiyon adı: `banking77_collect
 ## ▶️ Çalıştırma Kılavuzu
 
 Bu proje iki parçadan oluşur ve rolleri farklıdır:
-- `banking_rag_chatbot.ipynb`: Vektör veritabanını (ChromaDB) üretir ve zip’ler.
+- `banking_rag_chatbot.ipynb`: Vektör veritabanını (ChromaDB) üretir ve zip’ler; ayrıca veri setini indirme/ön işleme, intent eşlemesi ve temel istatistikler, embedding kalite kontrolü ve küçük RAG/LLM duman testleri gibi yardımcı adımları içerir.
 - `streamlit_app.py`: Üretilmiş veritabanını kullanarak web arayüzünde sohbet deneyimi sunar.
 
 ### 1) Vektör Veritabanı Üretimi — `banking_rag_chatbot.ipynb`
@@ -97,7 +97,7 @@ streamlit run streamlit_app.py
 ---
 
 ## 🖥️ Web Arayüzü
-- Deploy Link: [https://banking-rag-chatbot.streamlit.app]
+- Deploy Link: https://banking-rag-chatbot.streamlit.app
 ![Banking RAG Chatbot Demo](assets/demo.gif)
 
 ---
