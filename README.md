@@ -1,4 +1,4 @@
-# 🏦 Banking RAG Chatbot
+# 🏦 Banking RAG Chatbot - Akbank Generative AI Bootcamp Projesi
 
 Kısa açıklama: Banking77 veri seti üzerinde RAG (Retrieval-Augmented Generation) yaklaşımı ile bankacılık sorularına alanına özel, kaynak destekli yanıtlar üreten bir sohbet botu.
 
@@ -127,4 +127,10 @@ Alternatif (daha üretim-odaklı) seçenekler:
 
 Bu repoda amaç hızlı deneme/tekrar üretilebilirlik olduğundan `chroma_db/` versiyon kontrolüne dahil edilmiştir.
 
+---
 
+## 📝 Lisans ve Kullanım
+Bu proje eğitim amaçlı olarak hazırlanmıştır.
+
+## 🙌 Teşekkür
+Akbank Generative AI Bootcamp eğitmenlerine ve açık kaynak topluluğuna teşekkürler.
