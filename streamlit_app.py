@@ -1,7 +1,5 @@
-
 import streamlit as st
 import os
-from sentence_transformers import SentenceTransformer
 import chromadb
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
