@@ -20,8 +20,5 @@ google-generativeai==0.3.2
 pandas==2.2.2
 numpy==1.26.4
 
-# Tokenization
-tiktoken==0.7.0
-
 # Web UI
 streamlit>=1.38
