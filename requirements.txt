@@ -26,4 +26,4 @@ numpy==1.26.4
 tiktoken==0.7.0
 
 # Web UI
-streamlit==1.33.0
+streamlit>=1.38
