@@ -16,9 +16,5 @@ torch==2.2.2
 # Google AI
 google-generativeai==0.3.2
 
-# Data Processing
-pandas==2.2.2
-numpy==1.26.4
-
 # Web UI
 streamlit>=1.38
