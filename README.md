@@ -48,7 +48,6 @@ Not: Veri İngilizce olduğundan, chatbot’tan en iyi performans İngilizce sor
 - Vektör DB: ChromaDB (PersistentClient)
 - RAG: LangChain (RetrievalQA + PromptTemplate)
 - Arayüz: Streamlit
-- Yardımcı: pandas, numpy, transformers, tiktoken
 
 ## 🧩 RAG Mimarisi
 1) Soru → Embedding
