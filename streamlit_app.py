@@ -168,7 +168,7 @@ if prompt:
             with st.spinner("🤔 Düşünüyorum..."):
                 try:
                     # RAG sisteminden yanıt al
-                    result = rag_chain({"query": prompt})
+                    result = rag_chain.invoke({"query": prompt})
                     response = result['result']
                     sources = [doc.page_content for doc in result.get('source_documents', [])]
                     
